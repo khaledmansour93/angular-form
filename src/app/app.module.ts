@@ -4,6 +4,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AddFormComponent } from './add-form/add-form.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ChartModule } from 'angular-highcharts';
 
 @NgModule({
   declarations: [
@@ -13,7 +16,10 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
